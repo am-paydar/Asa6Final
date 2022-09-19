@@ -62,12 +62,12 @@ namespace Infrastructure.Repository
         }
         public async Task<IEnumerable<TEntity>> GetByReceivedIdAsync(string receivedCode)
         {
-            return await FindByCondition(entity => entity.ReceivedID.Equals(receivedCode))
-                .ToListAsync();
+            return await FindByCondition(entity => entity.ReceivedID.Equals(receivedCode)).ToListAsync();
+                
         }
-        public async Task<TEntity?> GetByReceivedIdNameAsync(string receivedCode, string name)
+        public async Task<TEntity?> GetByReceivedIdNameAsync(string receivedCode)
         {
-            return await FindByCondition(entity => entity.ReceivedID.Equals(receivedCode) && entity.Name.Equals(name))
+            return await FindByCondition(entity => entity.ReceivedID.Equals(receivedCode))
                 .FirstOrDefaultAsync();
         }
         public async Task CreateAsync(TEntity entity)

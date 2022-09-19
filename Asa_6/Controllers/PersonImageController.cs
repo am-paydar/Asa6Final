@@ -19,37 +19,50 @@ namespace Asa_6.Controllers
         }
 
 
-        //[HttpGet]
-        //public async Task<ActionResult> GetImagePerson([FromForm] GetFile file)
-        //{
-        //    var person = await _personService.GetByReceivedIdNameAsync(file.ID, file.Name);
-        //    if (person == null)
-        //    {
-        //        return NotFound();
-        //    }
-        //    switch (file.FileSize)
-        //    {
-        //        case "1":
-        //            return Ok(person.TinyPath);
-        //        case "2":
-        //            return Ok(person.NormalPath);
-        //        case "4":
-        //            return Ok(person.BigPath);
-        //        default: return BadRequest();
-        //    }
-        //}
-
-        [HttpPost("CreatePerson")]
-        public async Task<ActionResult> CreatePersonImage([FromForm] PostFile file)
+        [HttpGet("GetImagePerson")]
+        public async Task<ActionResult> GetImagePersonAsync([FromForm] GetFileDTO file)
         {
-            var person = await _personService.GetByReceivedIdAsync(file.ID);
-            //if (person != null)
-            //{
-            //    return BadRequest();
-            //}
+            var person = await _personService.GetByReceivedIdNameAsync(file.ID);
+
+            if (person == null)
+            {
+                return NotFound();
+            }
+
+            switch (file.FileSize)
+            {
+                case "Tiny":
+                    return Ok(person.TinyPath);
+                case "Normal":
+                    return Ok(person.NormalPath);
+                case "Big":
+                    return Ok(person.BigPath);
+                default: return BadRequest();
+            }
+        }
+
+        [HttpPost("CreatePersonImage")]
+        public async Task<ActionResult> CreatePersonImageAsync([FromForm] PostFileDTO file)
+        {
+
+            if(file.ID==null && file.FormFile==null)
+                return BadRequest();
+
+            var persons = await _personService.GetByReceivedIdAsync(file.ID);
+
+
+            foreach(var person in persons)
+            {
+                if (person != null)
+                {
+                    return BadRequest();
+                }
+            }
+
+
             //string? path = await _uploadFile.Saveasync(file.FormFile, "Person", "Normal", file.ID);
 
-            
+
             var fileStream = new FileStream(Path.Combine(Directory.GetCurrentDirectory(), "Host/PersonsImage",file.FormFile.FileName), FileMode.Create);
 
             file.FormFile.CopyToAsync(fileStream);
@@ -68,13 +81,15 @@ namespace Asa_6.Controllers
                 Flag = true,
                 NormalPath = Path.Combine(Directory.GetCurrentDirectory(), "Host", "PersonsImage", file.FormFile.FileName)
             };
+
             await _personService.CreateAsync(personEntity);
+
             return Ok();
         }
 
 
         //[HttpPut]
-        //public async Task<ActionResult> UpdatePersonImageasync([FromForm] PostFile file)
+        //public async Task<ActionResult> UpdatePersonImageasync([FromForm] PutFileDTO file)
         //{
         //    var PersonUpdate = await _personService.GetByReceivedIdNameAsync(file.ID, file.Name);
         //    if (PersonUpdate == null || PersonUpdate.IsRemove)

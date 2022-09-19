@@ -19,7 +19,7 @@ namespace Domain.IRepository
         Task<IEnumerable<TEntity>> FindAllFalseFlag();
         Task<TEntity?> GetByIdAsync(int id);
         Task<IEnumerable<TEntity>> GetByReceivedIdAsync(string receivedCode);
-        Task<TEntity?> GetByReceivedIdNameAsync(string receivedCode, string name);
+        Task<TEntity?> GetByReceivedIdNameAsync(string receivedCode);
         Task CreateAsync(TEntity entity);
         Task UpdateAsync(TEntity entity);
         Task DeleteAsync(TEntity entity);
