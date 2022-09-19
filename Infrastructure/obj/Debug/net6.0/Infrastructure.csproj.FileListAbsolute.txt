@@ -1,0 +1,17 @@
+F:\Asa_6\Infrastructure\bin\Debug\net6.0\Infrastructure.deps.json
+F:\Asa_6\Infrastructure\bin\Debug\net6.0\Infrastructure.runtimeconfig.json
+F:\Asa_6\Infrastructure\bin\Debug\net6.0\Infrastructure.dll
+F:\Asa_6\Infrastructure\bin\Debug\net6.0\Infrastructure.pdb
+F:\Asa_6\Infrastructure\bin\Debug\net6.0\Domain.dll
+F:\Asa_6\Infrastructure\bin\Debug\net6.0\Domain.pdb
+F:\Asa_6\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.AssemblyReference.cache
+F:\Asa_6\Infrastructure\obj\Debug\net6.0\Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+F:\Asa_6\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfoInputs.cache
+F:\Asa_6\Infrastructure\obj\Debug\net6.0\Infrastructure.AssemblyInfo.cs
+F:\Asa_6\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CoreCompileInputs.cache
+F:\Asa_6\Infrastructure\obj\Debug\net6.0\Infrastructure.csproj.CopyComplete
+F:\Asa_6\Infrastructure\obj\Debug\net6.0\Infrastructure.dll
+F:\Asa_6\Infrastructure\obj\Debug\net6.0\refint\Infrastructure.dll
+F:\Asa_6\Infrastructure\obj\Debug\net6.0\Infrastructure.pdb
+F:\Asa_6\Infrastructure\obj\Debug\net6.0\Infrastructure.genruntimeconfig.cache
+F:\Asa_6\Infrastructure\obj\Debug\net6.0\ref\Infrastructure.dll
