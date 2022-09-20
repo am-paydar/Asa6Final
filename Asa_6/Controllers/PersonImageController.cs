@@ -80,7 +80,7 @@ namespace Asa_6.Controllers
         }
 
 
-        [HttpPut]
+        [HttpPut("UpdatePersonImage")]
         public async Task<ActionResult> UpdatePersonImageasync([FromForm] PutFileDTO file)
         {
             var PersonUpdate = await _personService.GetByReceivedIdAsync(file.RecivedID);
@@ -111,7 +111,8 @@ namespace Asa_6.Controllers
             return Ok();
         }
 
-        [HttpPut]
+
+        [HttpPut("DeletePersonImage")]
         public async Task<ActionResult> DeletePersonImageasync([FromForm] PutFileDTO file)
         {
             var PersonUpdate = await _personService.GetByReceivedIdAsync(file.RecivedID);
@@ -133,5 +134,6 @@ namespace Asa_6.Controllers
             await _personService.UpdateAsync(PersonUpdate);
             return Ok();
         }
+
     }
 }
