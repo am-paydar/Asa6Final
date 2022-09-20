@@ -1,0 +1,17 @@
+F:\Asa_6\Application\bin\Release\net6.0\Application.deps.json
+F:\Asa_6\Application\bin\Release\net6.0\Application.dll
+F:\Asa_6\Application\bin\Release\net6.0\Application.pdb
+F:\Asa_6\Application\bin\Release\net6.0\Domain.dll
+F:\Asa_6\Application\bin\Release\net6.0\Infrastructure.dll
+F:\Asa_6\Application\bin\Release\net6.0\Domain.pdb
+F:\Asa_6\Application\bin\Release\net6.0\Infrastructure.pdb
+F:\Asa_6\Application\obj\Release\net6.0\Application.csproj.AssemblyReference.cache
+F:\Asa_6\Application\obj\Release\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+F:\Asa_6\Application\obj\Release\net6.0\Application.AssemblyInfoInputs.cache
+F:\Asa_6\Application\obj\Release\net6.0\Application.AssemblyInfo.cs
+F:\Asa_6\Application\obj\Release\net6.0\Application.csproj.CoreCompileInputs.cache
+F:\Asa_6\Application\obj\Release\net6.0\Application.csproj.CopyComplete
+F:\Asa_6\Application\obj\Release\net6.0\Application.dll
+F:\Asa_6\Application\obj\Release\net6.0\refint\Application.dll
+F:\Asa_6\Application\obj\Release\net6.0\Application.pdb
+F:\Asa_6\Application\obj\Release\net6.0\ref\Application.dll

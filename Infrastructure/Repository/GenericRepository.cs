@@ -20,7 +20,7 @@ namespace Infrastructure.Repository
             _unitOfWork = unitOfWork;
             _dbSet = unitOfWork.Set<TEntity>();
         }
-
+   
         public IEnumerable<TEntity> FindAll()
         {
             return _dbSet.AsNoTracking().ToList();
@@ -60,14 +60,14 @@ namespace Infrastructure.Repository
             return await FindByCondition(entity => entity.ID.Equals(id))
                 .FirstOrDefaultAsync();
         }
-        public async Task<IEnumerable<TEntity>> GetByReceivedIdAsync(string receivedCode)
+        public async Task<IEnumerable<TEntity>> GetListByReceivedIdAsync(string receivedCode)
         {
             return await FindByCondition(entity => entity.ReceivedID.Equals(receivedCode)).ToListAsync();
-                
+
         }
-        public async Task<TEntity?> GetByReceivedIdNameAsync(string receivedCode)
+        public async Task<TEntity?> GetByReceivedIdAsync(string receivedCode)
         {
-            return await FindByCondition(entity => entity.ReceivedID.Equals(receivedCode))
+            return await FindByCondition(entity => entity.ReceivedID.Equals(receivedCode)&& entity.IsRemove.Equals(false))
                 .FirstOrDefaultAsync();
         }
         public async Task CreateAsync(TEntity entity)
@@ -86,6 +86,6 @@ namespace Infrastructure.Repository
             await _unitOfWork.SaveChangesAsync();
         }
 
-       
+
     }
 }
