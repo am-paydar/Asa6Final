@@ -10,21 +10,15 @@ namespace Domain.IRepository
 {
     public interface IGenericRepository<TEntity> where TEntity : DomainEntity
     {
-        IEnumerable<TEntity> FindAll();
         IQueryable<TEntity> FindByCondition(Expression<Func<TEntity, bool>> expression);
-        void Create(TEntity entity);
-        void Update(TEntity entity);
-        void Delete(TEntity entity);
-        Task<IEnumerable<TEntity>> FindAllAsync();
-        Task<IEnumerable<TEntity>> FindAllFalseFlag();
-        Task<TEntity?> GetByIdAsync(int id);
-        Task<IEnumerable<TEntity>> GetListByReceivedIdAsync(string receivedCode);
-        Task<TEntity?> GetByReceivedIdAsync(string receivedCode);
+        Task<IEnumerable<TEntity>> FindAlltrueFlag();
+        Task<IEnumerable<TEntity>> FindAllIsRemove();
+        Task<TEntity?> GetByIdAsync(string receivedCode);
+        Task<IEnumerable<TEntity>> GetByReceivedIdAsync(string receivedCode);
+        Task<TEntity?> GetByNormalPathasync(string path);
         Task CreateAsync(TEntity entity);
         Task UpdateAsync(TEntity entity);
         Task DeleteAsync(TEntity entity);
-
-
 
     }
 }

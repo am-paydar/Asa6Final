@@ -1,4 +1,5 @@
-﻿using Application.Services;
+﻿using Application.CommonServices.UploadFile.Image;
+using Application.Services;
 using Domain.DTO;
 using Domain.Models;
 using Microsoft.AspNetCore.Http;
@@ -6,75 +7,84 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Asa_6.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/PersonImage")]
     [ApiController]
     public class PersonImageController : ControllerBase
     {
         private readonly IPersonService _personService;
 
-        public PersonImageController(IPersonService personService)
+        private readonly IUploadImageFile _IUploadImageFile;
+
+        public PersonImageController(IPersonService personService, IUploadImageFile iUploadImageFile)
         {
             _personService = personService;
+
+            _IUploadImageFile = iUploadImageFile;
         }
 
 
-        [HttpGet("GetImagePerson")]
-        public async Task<ActionResult> GetImagePersonAsync([FromForm] GetFileDTO file)
+        [HttpGet("GetPersonNormalImage/{id}")]
+        public async Task<ActionResult> GetPersonNormalImageAsync(string RecivedCode)
         {
-            var person = await _personService.GetByReceivedIdAsync(file.ID);
+            var path = await _personService.GetPersonNormalImageAsync(RecivedCode);
 
-            if (person == null)
+            if (path==null)
             {
-                return NotFound();
+                return BadRequest("The person with this ID doesn't exists");
             }
 
-            switch (file.FileSize)
+            return Ok(path);
+
+        }
+
+        [HttpGet("GetPersonTinyImage/{id}")]
+        public async Task<ActionResult> GetPersonTinyImageAsync(string RecivedCode)
+        {
+            var path = await _personService.GetPersonTinyImageAsync(RecivedCode);
+
+            if (path==null)
             {
-                case "Tiny":
-                    return Ok(person.TinyPath);
-                case "Normal":
-                    return Ok(person.NormalPath);
-                case "Big":
-                    return Ok(person.BigPath);
-                default: return BadRequest();
+                return BadRequest("The person with this ID doesn't exists");
             }
+
+            return Ok(path);
+
+        }
+
+        [HttpGet("GetPersonBigImage/{id}")]
+        public async Task<ActionResult> GetPersonBigImageAsync(string RecivedCode)
+        {
+            var path = await _personService.GetPersonBigImageAsync(RecivedCode);
+
+            if (path==null)
+            {
+                return BadRequest("The person with this ID doesn't exists");
+            }
+ 
+            return Ok(path);
+
         }
 
 
         [HttpPost("CreatePersonImage")]
         public async Task<ActionResult> CreatePersonImageAsync([FromForm] PostFileDTO file)
         {
+            var tuple =await _personService.CheckPersonIdAsync(file.RecivedID);
 
-            if(file.ID==null && file.FormFile==null)
-                return BadRequest();
-
-            var person = await _personService.GetByReceivedIdAsync(file.ID);
-
-                if (person != null)
-                {
-                    return BadRequest();
-                }
-         
-
-
-            //---------------------------------------
-            var fileStream = new FileStream(Path.Combine(Directory.GetCurrentDirectory(), "Host/PersonsImage",file.FormFile.FileName), FileMode.Create);
-
-            file.FormFile.CopyToAsync(fileStream);
-
-            //---------------------------------------
-
-            var personEntity = new PersonEntity()
+            if (!tuple.Item1)
             {
-                ReceivedID = file.ID,
-                Name = file.FormFile.Name,
-                Type = file.FormFile.ContentType,
-                CreatedOn = DateTime.Now,
-                Flag = true,
-                NormalPath = Path.Combine(Directory.GetCurrentDirectory(), "Host", "PersonsImage", file.FormFile.FileName)
-            };
+                return BadRequest("The person with this ID has already exists");
+            }
 
-            await _personService.CreateAsync(personEntity);
+            if (!_IUploadImageFile.ValidateFile(file.FormFile))
+            {
+                return BadRequest("The file doesn't valid ");
+
+            }
+
+            var path=await _IUploadImageFile.SaveFileAsync(file.FormFile, "PersonsImages");
+
+            _personService.CreatePersonImageAsync(file, path);
 
             return Ok();
         }
@@ -83,55 +93,39 @@ namespace Asa_6.Controllers
         [HttpPut("UpdatePersonImage")]
         public async Task<ActionResult> UpdatePersonImageasync([FromForm] PutFileDTO file)
         {
-            var PersonUpdate = await _personService.GetByReceivedIdAsync(file.RecivedID);
+            var tuple = await _personService.CheckPersonIdAsync(file.RecievedID);
 
-            if (PersonUpdate == null || PersonUpdate.IsRemove)
+            if (tuple.Item1)
             {
-                return NotFound();
+                return BadRequest("The person with this ID doesn't exist");
             }
 
-            string? path =  file.path;
-            if (path == null)
+            if (!_IUploadImageFile.ValidateFile(file.FormFile))
             {
-                return BadRequest();
-            }
-            var personEntity = new PersonEntity()
-            {
-                ReceivedID = PersonUpdate.ReceivedID,
-                Name = file.FormFile.Name,
-                Type = file.FormFile.ContentType,
-                CreatedOn = DateTime.Now,
-                Flag = true,
-                NormalPath = path,
-                BigPath = null,
-                TinyPath = null,
+                return BadRequest("The file doesn't valid ");
 
-            };
-            await _personService.UpdateAsync(personEntity);
+            }
+
+            var path = await _IUploadImageFile.SaveFileAsync(file.FormFile, "PersonsImages");
+
+            await _personService.UpdatePersonImageAsync(file, path);
+
             return Ok();
         }
 
 
-        [HttpPut("DeletePersonImage")]
-        public async Task<ActionResult> DeletePersonImageasync([FromForm] PutFileDTO file)
+        
+        [HttpDelete("DeletePersonImage")]
+        public async Task<ActionResult> DeletePersonImageasync([FromForm] DeleteFileDTO file)
         {
-            var PersonUpdate = await _personService.GetByReceivedIdAsync(file.RecivedID);
+            var tuple = await _personService.CheckPersonIdAsync(file.RecivedID);
 
-            if (PersonUpdate == null || PersonUpdate.IsRemove)
+            if (tuple.Item1)
             {
-                return NotFound();
+                return BadRequest("The person with this ID doesn't exist");
             }
 
-            string? path = file.path;
-
-            if (path == null)
-            {
-                return BadRequest();
-            }
-
-            PersonUpdate.IsRemove = true;
-
-            await _personService.UpdateAsync(PersonUpdate);
+            await _personService.DeletePersonImageasync(file.RecivedID);
             return Ok();
         }
 

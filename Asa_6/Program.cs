@@ -1,3 +1,4 @@
+using Application.CommonServices.UploadFile.Image;
 using Application.IServices;
 using Application.Services;
 using Domain.IRepository;
@@ -15,6 +16,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<IUnitOfWork, MainContext>();
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IPersonService, PersonService>();
+builder.Services.AddScoped<IUploadImageFile, UploadImageFile>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

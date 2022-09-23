@@ -9,7 +9,6 @@ namespace Domain.DTO
     
         public class DeleteFileDTO
         {
-            public string path { get; set; }
             public string RecivedID { get; set; }
 
         }

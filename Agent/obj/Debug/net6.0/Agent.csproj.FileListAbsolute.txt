@@ -1,0 +1,5 @@
+F:\Asa_6\Agent\obj\Debug\net6.0\Agent.csproj.AssemblyReference.cache
+F:\Asa_6\Agent\obj\Debug\net6.0\Agent.GeneratedMSBuildEditorConfig.editorconfig
+F:\Asa_6\Agent\obj\Debug\net6.0\Agent.AssemblyInfoInputs.cache
+F:\Asa_6\Agent\obj\Debug\net6.0\Agent.AssemblyInfo.cs
+F:\Asa_6\Agent\obj\Debug\net6.0\Agent.csproj.CoreCompileInputs.cache

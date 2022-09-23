@@ -20,56 +20,35 @@ namespace Infrastructure.Repository
             _unitOfWork = unitOfWork;
             _dbSet = unitOfWork.Set<TEntity>();
         }
-   
-        public IEnumerable<TEntity> FindAll()
-        {
-            return _dbSet.AsNoTracking().ToList();
-        }
+       
         public IQueryable<TEntity> FindByCondition(Expression<Func<TEntity, bool>> expression)
         {
             return _dbSet.Where(expression).AsNoTracking();
         }
-        public void Create(TEntity entity)
-        {
-            _dbSet.Add(entity);
-            _unitOfWork.SaveChanges();
-        }
-        public void Update(TEntity entity)
-        {
-            _dbSet.Update(entity);
-            _unitOfWork.SaveChanges();
-        }
-        public void Delete(TEntity entity)
-        {
-            _dbSet.Remove(entity);
-            _unitOfWork.SaveChanges();
 
+        public async Task<IEnumerable<TEntity>> FindAlltrueFlag()
+        {
+            return await FindByCondition(entity => entity.Flag.Equals(true)).ToListAsync();
+        }
+        public async Task<IEnumerable<TEntity>> FindAllIsRemove()
+        {
+            return await FindByCondition(entity => entity.Flag.Equals(true)).ToListAsync();
         }
 
-        public async Task<IEnumerable<TEntity>> FindAllAsync()
-        {
-            return await _dbSet.AsNoTracking().ToListAsync();
-        }
 
-        public async Task<IEnumerable<TEntity>> FindAllFalseFlag()
+        public async Task<IEnumerable<TEntity>> GetByReceivedIdAsync(string receivedCode)
         {
-            return await FindByCondition(entity => entity.Flag.Equals(false)).ToListAsync();
+            return await FindByCondition(entity => entity.ReceivedID.Equals(receivedCode))
+                    .AsNoTracking().ToListAsync();
+
         }
-        public async Task<TEntity?> GetByIdAsync(int id)
+        public async Task<TEntity?> GetByNormalPathasync(string path)
         {
-            return await FindByCondition(entity => entity.ID.Equals(id))
+            return await FindByCondition(entity => entity.NormalPath.Equals(path))
                 .FirstOrDefaultAsync();
         }
-        public async Task<IEnumerable<TEntity>> GetListByReceivedIdAsync(string receivedCode)
-        {
-            return await FindByCondition(entity => entity.ReceivedID.Equals(receivedCode)).ToListAsync();
 
-        }
-        public async Task<TEntity?> GetByReceivedIdAsync(string receivedCode)
-        {
-            return await FindByCondition(entity => entity.ReceivedID.Equals(receivedCode)&& entity.IsRemove.Equals(false))
-                .FirstOrDefaultAsync();
-        }
+        //--------------------------------------------------------------
         public async Task CreateAsync(TEntity entity)
         {
             _dbSet.Add(entity);
@@ -85,7 +64,10 @@ namespace Infrastructure.Repository
             _dbSet.Remove(entity);
             await _unitOfWork.SaveChangesAsync();
         }
-
-
+        //--------------------------------------------------------------
+        public async Task<TEntity?> GetByIdAsync(string receivedCode)
+        {
+            return await _dbSet.Where(entity=>entity.ReceivedID.Equals(receivedCode)&&entity.IsRemove.Equals(false)).FirstOrDefaultAsync();
+        }
     }
 }

@@ -9,7 +9,7 @@ namespace Domain.DTO
 {
     public class PostFileDTO
     {
-        public string ID { get; set; }
+        public string RecivedID { get; set; }
         public IFormFile FormFile { get; set; }
     }
 }
