@@ -1,6 +1,5 @@
 ﻿using Infrastructure.Configurations;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.ChangeTracking;
 
 namespace Infrastructure
 {
@@ -8,18 +7,13 @@ namespace Infrastructure
     {
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Data Source=.;Initial Catalog=ContentProduction;Integrated Security=True");
-        }
+            optionsBuilder.UseSqlServer("SECURED!");
 
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.ApplyConfiguration(new PersonEntityConfig());
-            modelBuilder.ApplyConfiguration(new ProductEntityConfig());
-
-        }
-        public new EntityEntry<TEntity> Entry<TEntity>(TEntity entity) where TEntity : class
-        {
-            return base.Entry(entity);
+            modelBuilder.ApplyConfiguration(new ImageEntityConfig());
+            modelBuilder.ApplyConfiguration(new MediaEntityConfig());
         }
         public new DbSet<TEntity> Set<TEntity>() where TEntity : class
         {
@@ -29,7 +23,6 @@ namespace Infrastructure
         {
             return base.SaveChanges();
         }
-
         public Task<int> SaveChangesAsync()
         {
             return base.SaveChangesAsync();

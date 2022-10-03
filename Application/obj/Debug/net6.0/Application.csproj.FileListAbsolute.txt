@@ -15,3 +15,88 @@ F:\Asa_6\Application\obj\Debug\net6.0\Application.dll
 F:\Asa_6\Application\obj\Debug\net6.0\refint\Application.dll
 F:\Asa_6\Application\obj\Debug\net6.0\Application.pdb
 F:\Asa_6\Application\obj\Debug\net6.0\ref\Application.dll
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\bin\Debug\net6.0\Application.deps.json
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\bin\Debug\net6.0\Application.dll
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\bin\Debug\net6.0\Application.pdb
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\bin\Debug\net6.0\Domain.dll
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\bin\Debug\net6.0\Infrastructure.dll
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\bin\Debug\net6.0\Domain.pdb
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\bin\Debug\net6.0\Infrastructure.pdb
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\obj\Debug\net6.0\Application.dll
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\obj\Debug\net6.0\refint\Application.dll
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\obj\Debug\net6.0\Application.pdb
+C:\dev\workspace\c-sharp\asp.net-core\Asa_6-Javad-0924\Asa_6\Application\obj\Debug\net6.0\ref\Application.dll
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Application.deps.json
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Application.dll
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Application.pdb
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Domain.dll
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Infrastructure.dll
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Domain.pdb
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Infrastructure.pdb
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.dll
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\refint\Application.dll
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.pdb
+F:\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\ref\Application.dll
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Application.deps.json
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Application.dll
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Application.pdb
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Domain.dll
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Infrastructure.dll
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Domain.pdb
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Infrastructure.pdb
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.dll
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\refint\Application.dll
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.pdb
+C:\Users\mgh56\Desktop\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\ref\Application.dll
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Application.deps.json
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Application.dll
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Application.pdb
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Domain.dll
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Infrastructure.dll
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Domain.pdb
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\bin\Debug\net6.0\Infrastructure.pdb
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.dll
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\refint\Application.dll
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\Application.pdb
+C:\Users\DARYASALAR JAVAD\Downloads\Asa6 - test\Asa6 - Publish 3\Asa6 - Publish 3\Asa6 - Publish 2\Asa_6\Application\obj\Debug\net6.0\ref\Application.dll
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\bin\Debug\net6.0\Application.deps.json
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\bin\Debug\net6.0\Application.dll
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\bin\Debug\net6.0\Application.pdb
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\bin\Debug\net6.0\Domain.dll
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\bin\Debug\net6.0\Infrastructure.dll
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\bin\Debug\net6.0\Domain.pdb
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\bin\Debug\net6.0\Infrastructure.pdb
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\obj\Debug\net6.0\Application.dll
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\obj\Debug\net6.0\refint\Application.dll
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\obj\Debug\net6.0\Application.pdb
+C:\dev\workspace\c-sharp\asp.net-core\LastPublish-Javad-1003\Asa_6\Application\obj\Debug\net6.0\ref\Application.dll

@@ -1,16 +1,23 @@
-﻿using Application.CommonServices.UploadFile.Image;
-using Microsoft.AspNetCore.Http;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Hosting;
 
 namespace Application.CommonServices.UploadFile.Image
 {
     public class UploadImageFile : IUploadImageFile
     {
-
+        private IHostingEnvironment _hostingEnvironment;
+        public UploadImageFile(IHostingEnvironment environment)
+        {
+            _hostingEnvironment = environment;
+        }
+        public bool ValidateFile(IFormFile file)
+        {
+            if (CheckFileType(file) && CheckFileSize(file))
+            {
+                return true;
+            }
+            return false;
+        }
         private bool CheckFileType(IFormFile file)
         {
             if (!Allowedtypes().ContainsValue(file.ContentType))
@@ -19,28 +26,6 @@ namespace Application.CommonServices.UploadFile.Image
             }
             return true;
         }
-        private bool CheckFileSize(IFormFile file)
-        {
-            var size = file.Length / 1024 / 1024;
-            if (size > 500)
-            {
-                return false;
-            }
-
-            return true;
-        }
-        
-
-        private string CrateFilePath(string FolderName)
-        {
-            return Path.Combine(Directory.GetCurrentDirectory(),"Host", FolderName, FileName());
-        }
-
-        //public string CrateFilePath()
-        //{
-        //    return Path.Combine( , FileName());
-        //}
-
         private Dictionary<string, string> Allowedtypes()
         {
             return new Dictionary<string, string>
@@ -51,30 +36,42 @@ namespace Application.CommonServices.UploadFile.Image
                 {".gif","image/gif"}
             };
         }
+        private bool CheckFileSize(IFormFile file)
+        {
+            var size =(double) file.Length / 1024 / 1024;
 
+            if( size == 0 )
+            {
+                return false;
+            }
+            if (size > 500 )
+            {
+                return false;
+            }
+            return true;
+        }
+        public async Task<string> SaveFileAsync(IFormFile file)
+        {
+            var filepath = CreateFilePath(Path.Combine(_hostingEnvironment.WebRootPath,"Images"),
+                System.IO.Path.GetExtension(file.FileName));
+            var filestream = File.Create(filepath);
+            await file.CopyToAsync(filestream);
+            filestream.Close();
+            return GenerateServerFilePath(Path.GetFileName(filepath));
+        }
+        private string CreateFilePath(string FolderName,string fileExtention)
+        {
+            return Path.Combine(FolderName, FileName() + fileExtention);
+        }
         private string FileName()
         {
             Guid guid = Guid.NewGuid();
             return guid.ToString();
         }
-
-        public bool ValidateFile(IFormFile file)
+        private string GenerateServerFilePath(string fileName)
         {
-            if(CheckFileType(file) && CheckFileSize(file))
-            {
-                return true;
-            }
-            else
-            {
-                return false;
-            }
-        }
-         public async  Task<string> SaveFileAsync(IFormFile file, string FolderName)
-        {
-            var filepath = CrateFilePath(FolderName);
-            var filestream = new FileStream(filepath, FileMode.Create);
-            await file.CopyToAsync(filestream);
-            return filepath;
+            return "http://asa6.am-paydar.ir/File/Get?FolderName=" +
+                   "Images" + "&fileName=" + fileName;
         }
     }
 }

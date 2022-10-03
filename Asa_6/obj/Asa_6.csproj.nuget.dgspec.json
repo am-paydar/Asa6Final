@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "F:\\Asa_6\\Asa_6\\Asa_6.csproj": {}
+    "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Asa_6\\Asa_6.csproj": {}
   },
   "projects": {
-    "F:\\Asa_6\\Application\\Application.csproj": {
+    "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Asa_6\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "F:\\Asa_6\\Application\\Application.csproj",
-        "packagesPath": "C:\\Users\\DARYASALAR JAVAD\\.nuget\\packages\\",
-        "outputPath": "F:\\Asa_6\\Application\\obj\\",
+        "projectPath": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\AmirMasoud\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Application\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DARYASALAR JAVAD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AmirMasoud\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -31,11 +28,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\Asa_6\\Domain\\Domain.csproj": {
-                "projectPath": "F:\\Asa_6\\Domain\\Domain.csproj"
+              "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Domain\\Domain.csproj"
               },
-              "F:\\Asa_6\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "F:\\Asa_6\\Infrastructure\\Infrastructure.csproj"
+              "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -49,13 +46,24 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Hosting": {
+              "target": "Package",
+              "version": "[2.2.7, )"
+            },
+            "Microsoft.Extensions.Hosting.Abstractions": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -64,24 +72,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Asa_6\\Asa_6\\Asa_6.csproj": {
+    "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Asa_6\\Asa_6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Asa_6\\Asa_6\\Asa_6.csproj",
+        "projectUniqueName": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Asa_6\\Asa_6.csproj",
         "projectName": "Asa_6",
-        "projectPath": "F:\\Asa_6\\Asa_6\\Asa_6.csproj",
-        "packagesPath": "C:\\Users\\DARYASALAR JAVAD\\.nuget\\packages\\",
-        "outputPath": "F:\\Asa_6\\Asa_6\\obj\\",
+        "projectPath": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Asa_6\\Asa_6.csproj",
+        "packagesPath": "C:\\Users\\AmirMasoud\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Asa_6\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DARYASALAR JAVAD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AmirMasoud\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -95,11 +100,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\Asa_6\\Application\\Application.csproj": {
-                "projectPath": "F:\\Asa_6\\Application\\Application.csproj"
+              "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Application\\Application.csproj": {
+                "projectPath": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Application\\Application.csproj"
               },
-              "F:\\Asa_6\\Infrastructure\\Infrastructure.csproj": {
-                "projectPath": "F:\\Asa_6\\Infrastructure\\Infrastructure.csproj"
+              "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Infrastructure\\Infrastructure.csproj": {
+                "projectPath": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Infrastructure\\Infrastructure.csproj"
               }
             }
           }
@@ -131,7 +136,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -143,24 +149,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Asa_6\\Domain\\Domain.csproj": {
+    "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Asa_6\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "F:\\Asa_6\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\DARYASALAR JAVAD\\.nuget\\packages\\",
-        "outputPath": "F:\\Asa_6\\Domain\\obj\\",
+        "projectPath": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\AmirMasoud\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DARYASALAR JAVAD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AmirMasoud\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -197,7 +200,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -206,24 +210,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "F:\\Asa_6\\Infrastructure\\Infrastructure.csproj": {
+    "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "F:\\Asa_6\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "F:\\Asa_6\\Infrastructure\\Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\DARYASALAR JAVAD\\.nuget\\packages\\",
-        "outputPath": "F:\\Asa_6\\Infrastructure\\obj\\",
+        "projectPath": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\AmirMasoud\\.nuget\\packages\\",
+        "outputPath": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DARYASALAR JAVAD\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\AmirMasoud\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -237,8 +238,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "F:\\Asa_6\\Domain\\Domain.csproj": {
-                "projectPath": "F:\\Asa_6\\Domain\\Domain.csproj"
+              "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\dev\\workspace\\c-sharp\\asp.net-core\\LastPublish-Javad-1003\\Asa_6\\Domain\\Domain.csproj"
               }
             }
           }
@@ -274,7 +275,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -283,7 +285,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

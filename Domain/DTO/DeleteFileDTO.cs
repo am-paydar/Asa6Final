@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Domain.DTO
+﻿namespace Domain.DTO
 {
-    
-        public class DeleteFileDTO
-        {
-            public string RecivedID { get; set; }
+    public class DeleteFileDTO
+    {
+        public string ID { get; set; }
+    }
 
-        }
-   
 }

@@ -20,7 +20,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Host\PersonsImages\" />
+    <Folder Include="wwwroot\Media\Images\" />
+    <Folder Include="wwwroot\Media\Voices\" />
+    <Folder Include="wwwroot\Media\Videos\" />
+    <Folder Include="wwwroot\Images\" />
   </ItemGroup>
 
 </Project>
